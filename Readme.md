@@ -1,4 +1,4 @@
-Title: Bench List 
+Title: Bench List
 
 Idea: Marking all the benches in my college
 
