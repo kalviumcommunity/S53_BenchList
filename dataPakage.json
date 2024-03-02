@@ -1,0 +1,62 @@
+[
+    {
+        "placeName":"Uni mall",
+        "name":"Shubham",
+        "date":"05-02-2024",
+        "img":"https://i.pinimg.com/736x/83/5e/e1/835ee19834be39e3a2d5851c6eb7d04c.jpg"
+    },
+    {
+        "placeName":"BH4",
+        "name":"Aditya",
+        "date":"06-02-2024",
+        "img":"https://i.pinimg.com/736x/83/5e/e1/835ee19834be39e3a2d5851c6eb7d04c.jpg"
+    },
+    {
+        "placeName":"GH5-6",
+        "name":"Arjun",
+        "date":"01-02-2024",
+        "img":"https://i.pinimg.com/736x/83/5e/e1/835ee19834be39e3a2d5851c6eb7d04c.jpg"
+    },
+    {
+        "placeName":"School of Law",
+        "name":"Ranbir",
+        "date":"05-01-2024",
+        "img":"https://i.pinimg.com/736x/83/5e/e1/835ee19834be39e3a2d5851c6eb7d04c.jpg"
+    },
+    {
+        "placeName":"Uni Hospital",
+        "name":"Awa",
+        "date":"06-01-2024",
+        "img":"https://i.pinimg.com/736x/83/5e/e1/835ee19834be39e3a2d5851c6eb7d04c.jpg"
+    },
+    {
+        "placeName":"Student Welfare Wing",
+        "name":"Shreya",
+        "date":"31-01-2024",
+        "img":"https://i.pinimg.com/736x/83/5e/e1/835ee19834be39e3a2d5851c6eb7d04c.jpg"
+    },
+    {
+        "placeName":"Cinepolis",
+        "name":"Raju",
+        "date":"21-01-2024",
+        "img":"https://i.pinimg.com/736x/83/5e/e1/835ee19834be39e3a2d5851c6eb7d04c.jpg"
+    },
+    {
+        "placeName":"Near appartment",
+        "name":"Arun",
+        "date":"28-01-2024",
+        "img":"https://i.pinimg.com/736x/83/5e/e1/835ee19834be39e3a2d5851c6eb7d04c.jpg"
+    },
+    {
+        "placeName":"Boys Appartment",
+        "name":"Rajat",
+        "date":"15-01-2024",
+        "img":"https://i.pinimg.com/736x/83/5e/e1/835ee19834be39e3a2d5851c6eb7d04c.jpg"
+    },
+    {
+        "placeName":"Block 34",
+        "name":"Mayank",
+        "date":"25-01-2024",
+        "img":"https://i.pinimg.com/736x/83/5e/e1/835ee19834be39e3a2d5851c6eb7d04c.jpg"
+    }
+]
