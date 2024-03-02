@@ -1,13 +1,17 @@
 const express = require('express');
 const app = express();
-const port = process.env.PUBLIC_PORT || 6969;
+const port = process.env.PUBLIC_PORT || 7000;
 const {ConnectToDB,stopDatabase,isConnected} = require('./db')
+const route=require('./routes');
+app.use(express.json())
 
 ConnectToDB().then((mongoConnection)=>{
   app.get("/",(req,res)=>{
       res.json({message : mongoConnection ? "connected" : "disconnected"})
   })
 })
+
+app.use("/data",route)
 
 
 app.listen(port,()=>{
