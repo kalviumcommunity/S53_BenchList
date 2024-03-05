@@ -3,18 +3,9 @@
 }
   
 body {
-    background-color: rgb(234,234,236);
     margin: 0px;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-image: url("https://images.static-collegedunia.com/public/college_data/images/campusimage/1515757026LPU%20Campus%20View%20new.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center -15%;
-}
-    
-body {
-    /* background: #000; */
 }
 
 header {
@@ -42,20 +33,19 @@ li a {
     color: black;
 }
 
-/* nav a {
-    color: white;
-    text-decoration: none;
-} */
-/* 
-nav a:hover {
-    color: #ddd;
-} */
-
 .qoute {
     padding: 200px 20px 0 60px;
-    color: white;
+    /* color: white; */
+    color: black;
 }
 
 button{
     margin-top: 30px;
+}
+
+/* design dummy data */
+
+.link{
+    text-decoration: none;
+    color: black;
 }
