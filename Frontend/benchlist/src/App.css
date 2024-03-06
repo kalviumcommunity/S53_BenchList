@@ -49,3 +49,64 @@ button{
     text-decoration: none;
     color: black;
 }
+
+body{
+    width: 100vw;
+}
+
+.cardContainer{
+    /* display: flex; */
+    /* justify-content: space-around; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.card{
+    height: 400px;
+    width: 250px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    /* border */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* justify-content: center; */
+    align-items: center;
+
+}
+
+img{
+    height: 250px;
+    width: 250px;
+}
+
+.text{
+    font-size: 1em;
+    margin: 0;
+}
+
+.locationEmoji img{
+    height: 35px;
+    width: 35px;
+}
+
+.location{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1em;
+}
+
+/* home css */
+
+.qoute{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(228,228,232);
+    /* background-color: black; */
+    background-image: url("https://images.static-collegedunia.com/public/college_data/images/campusimage/1515757026LPU%20Campus%20View%20new.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 20%;
+}
