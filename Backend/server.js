@@ -5,7 +5,7 @@ const {ConnectToDB,stopDatabase,isConnected} = require('./db')
 const route=require('./routes');
 const cors=require("cors")
 app.use(express.json())
-app.use(cors())
+app.use(cors());
 ConnectToDB().then((mongoConnection)=>{
   app.get("/",(req,res)=>{
       res.json({message : mongoConnection ? "connected" : "disconnected"})
