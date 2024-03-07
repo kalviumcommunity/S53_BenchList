@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 import axios from 'axios'
 import '../App.css'
 import { useEffect, useState } from "react"
-import data from "../../../../Backend/dataPakage.json"
+// import data from "../../../../Backend/dataPakage.json"
 
 const benchList = () => {
     const [data, setData] = useState([])
