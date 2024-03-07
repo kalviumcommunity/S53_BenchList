@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const productSchema=new mongoose.Schema({
-    placeName:{
+    placename:{
         type:String,
         required:true,
     },
@@ -12,9 +12,13 @@ const productSchema=new mongoose.Schema({
     date:{
         type:Date,
     },
-    img:{
+    image:{
         type:String,
         required:true,
+    },
+    location:{
+        type:String,
+        required:true
     }
 })
 

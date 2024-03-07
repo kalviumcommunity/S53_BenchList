@@ -1,112 +1,176 @@
-*{
-    font-size: 1.4rem;
+* {
+  font-size: 1.4rem;
 }
-  
+
 body {
-    margin: 0px;
-    padding: 0;
-    font-family: Arial, sans-serif;
+  margin: 0px;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
 header {
-    background-color: #333;
-    padding: 20px;
+  background-color: #333;
+  padding: 20px;
 }
 
-nav{
-    display: flex;
-    justify-content: space-between;
+nav {
+  display: flex;
+  justify-content: space-between;
 }
 
 ul {
-    list-style-type: none;
-    margin: 10px;
-    display: flex;
-    margin-top: 45px;
-    
+  list-style-type: none;
+  margin: 10px;
+  display: flex;
+  margin-top: 45px;
 }
 
 li a {
-    padding: 10px 30px;
-    text-decoration: none;
-    margin-right: 20px;
-    color: black;
+  padding: 10px 30px;
+  text-decoration: none;
+  margin-right: 20px;
+  color: black;
 }
 
 .qoute {
-    padding: 200px 20px 0 60px;
-    /* color: white; */
-    color: black;
+  padding: 200px 20px 0 60px;
+  /* color: white; */
+  color: black;
 }
 
-button{
-    margin-top: 30px;
+button {
+  margin-top: 30px;
 }
 
 /* design dummy data */
 
-.link{
-    text-decoration: none;
-    color: black;
+.link {
+  text-decoration: none;
+  color: black;
 }
 
-body{
-    width: 100vw;
+body {
+  width: 100vw;
 }
 
-.cardContainer{
-    /* display: flex; */
-    /* justify-content: space-around; */
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
+.cardContainer {
+  /* display: flex; */
+  /* justify-content: space-around; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
-.card{
-    height: 400px;
-    width: 250px;
-    margin: 20px;
-    padding: 10px;
-    border: 1px solid black;
-    border-radius: 20px;
-    /* border */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    /* justify-content: center; */
-    align-items: center;
-
+.card {
+  height: 400px;
+  width: 250px;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 20px;
+  /* border */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* justify-content: center; */
+  align-items: center;
 }
 
-img{
-    height: 250px;
-    width: 250px;
+img {
+  height: 250px;
+  width: 250px;
 }
 
-.text{
-    font-size: 1em;
-    margin: 0;
+.text {
+  font-size: 1em;
+  margin: 0;
 }
 
-.locationEmoji img{
-    height: 35px;
-    width: 35px;
+.locationEmoji img {
+  height: 35px;
+  width: 35px;
 }
 
-.location{
-    display: flex;
-    justify-content: space-around;
-    font-size: 1em;
+.location {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1em;
 }
 
 /* home css */
 
-.qoute{
-    height: 100vh;
-    width: 100vw;
-    background-color: rgb(228,228,232);
-    /* background-color: black; */
-    background-image: url("https://images.static-collegedunia.com/public/college_data/images/campusimage/1515757026LPU%20Campus%20View%20new.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center 20%;
+.qoute {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(228, 228, 232);
+  /* background-color: black; */
+  background-image: url("https://images.static-collegedunia.com/public/college_data/images/campusimage/1515757026LPU%20Campus%20View%20new.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 20%;
+}
+
+.editcard{
+  width: 90vw;
+  height: 100px;
+  border: 1px solid black;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Style Form */
+
+form{
+  margin-top: 40px;
+}
+
+.form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+textarea.form-input {
+  height: 120px;
+}
+
+.submit-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
 }
