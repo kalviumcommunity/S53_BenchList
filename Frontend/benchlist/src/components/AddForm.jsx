@@ -22,7 +22,7 @@ function AddForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:7000/data", {
+      const response = await axios.post("https://s53-benchlist-server.onrender.com/data", {
         name: data.name,
         placename: data.placename,
         location: data.location,
