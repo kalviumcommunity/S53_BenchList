@@ -8,6 +8,7 @@ import Contacts from "./components/Contacts"
 import Login from "./components/Login"
 import SignUp from "./components/SignUp"
 import Data from "./components/DummyData"
+import AddForm from "./components/AddForm"
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/4" element={<Login />} />
           <Route path="/5" element={<SignUp />} />
           <Route path="/6" element={<Data />} />
+          <Route path="/7" element={<AddForm />} />
         </Routes>
       </div>
     </>
