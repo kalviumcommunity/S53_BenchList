@@ -1,10 +1,10 @@
-import { useParams,useNavigate } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import "../App.css";
 
 function EditForm() {
-  const navigate=useNavigate();
+  const navigate = useNavigate();
   const { id } = useParams();
   const [data, setData] = useState({
     name: "",
@@ -36,7 +36,7 @@ function EditForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.put(`http://localhost:7000/data/${id}`, data);
+      const response = await axios.put(`https://s53-benchlist-server.onrender.com/data/${id}`, data);
       console.log(response);
       navigate("/8")
     } catch (error) {
