@@ -52,9 +52,6 @@ const benchList = () => {
                     <div className="addButton">
                         <button><Link to="/7">ADD</Link></button>
                     </div>
-                    <div className="editButton">
-                        <button><Link to="/8">EDIT</Link></button>
-                    </div>
                 </div>
             </div>
         </>
