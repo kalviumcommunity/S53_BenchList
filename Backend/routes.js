@@ -2,9 +2,21 @@ const express = require("express");
 const router=express.Router()
 const mongoose = require("mongoose");
 const User = require("./productschema");
+const validator = require("./joivalidation");
 
 const app = express();
 app.use(express.json())
+
+const validation=(req,res,next)=>{
+   const {error}=validator.validate(req.body);
+   if(error){
+    res.send(error.message);
+
+   }
+   else{
+    next();
+   }
+}
 
 
 router.get("/", async (req, res) => {
@@ -27,7 +39,7 @@ router.get("/:id", async (req, res) => {
     }
 });
 
-router.post("/", async (req, res) => {
+router.post("/",validation, async (req, res) => {
     try {
         const newUser = await User.create(req.body);
         if (newUser) {
