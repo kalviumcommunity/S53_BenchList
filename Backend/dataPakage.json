@@ -3,70 +3,70 @@
         "placeName":"Uni mall",
         "name":"Shubham",
         "date":"05-02-2024",
-        "img":"https://i.pinimg.com/736x/83/5e/e1/835ee19834be39e3a2d5851c6eb7d04c.jpg",
-        "benchLocation": "On floor 5 & 6"
+        "image":"https://i.pinimage.com/736x/83/5e/e1/835ee19834be39e3a2d5851c6eb7d04c.jpg",
+        "location": "On floor 5 & 6"
     },
     {
         "placeName":"Admission",
         "name":"Aditya",
         "date":"06-02-2024",
-        "img":"https://campusutra.com/wp-content/uploads/2021/06/lpu-nest-exam-1-1.jpg",
-        "benchLocation": "Between Entry and Exit Gate"
+        "image":"https://campusutra.com/wp-content/uploads/2021/06/lpu-nest-exam-1-1.jpg",
+        "location": "Between Entry and Exit Gate"
     },
     {
         "placeName":"BH-4",
         "name":"Arjun",
         "date":"01-02-2024",
-        "img":"https://www.static-contents.youth4work.com/university/513510e8-16a0-4a58-867a-d6edc46b6c87.png",
-        "benchLocation": "In Ground"
+        "image":"https://www.static-contents.youth4work.com/university/513510e8-16a0-4a58-867a-d6edc46b6c87.png",
+        "location": "In Ground"
     },
     {
         "placeName":"Business",
         "name":"Ranbir",
         "date":"05-01-2024",
-        "img":"https://www.pagalguy.com/wp-content/uploads/2018/10/7A3897FD39670D72.jpg",
-        "benchLocation": "In front of block"
+        "image":"https://www.pagalguy.com/wp-content/uploads/2018/10/7A3897FD39670D72.jpg",
+        "location": "In front of block"
     },
     {
         "placeName":"Uni Hospital",
         "name":"Awa",
         "date":"06-01-2024",
-        "img":"https://i.pinimg.com/736x/83/5e/e1/835ee19834be39e3a2d5851c6eb7d04c.jpg",
-        "benchLocation": "Rightside of that building"
+        "image":"https://i.pinimage.com/736x/83/5e/e1/835ee19834be39e3a2d5851c6eb7d04c.jpg",
+        "location": "Rightside of that building"
     },
     {
         "placeName":"Student Welfare Wing",
         "name":"Shreya",
         "date":"31-01-2024",
-        "img":"https://i.pinimg.com/736x/83/5e/e1/835ee19834be39e3a2d5851c6eb7d04c.jpg",
-        "benchLocation": ""
+        "image":"https://i.pinimage.com/736x/83/5e/e1/835ee19834be39e3a2d5851c6eb7d04c.jpg",
+        "location": ""
     },
     {
         "placeName":"Multimedia",
         "name":"Raju",
         "date":"21-01-2024",
-        "img":"https://www.bing.com/images/search?view=detailV2&ccid=tnmEs%2fpD&id=B60FC1FD5EC77E63445EDB94C4B723430076BB86&thid=OIP.tnmEs_pDcPIGG8jS6EBjFQAAAA&mediaurl=https%3a%2f%2fpahaldesign.com%2fwp-content%2fuploads%2f2017%2f12%2ffine-arts-at-lpu.jpg&exph=308&expw=400&q=design+block+lpu&simid=608045663337410399&FORM=IRPRST&ck=FC64CBBB1AA59448B9F881DF3552B10C&selectedIndex=19&itb=0",
-        "benchLocation": "On 2nd floor"
+        "image":"https://www.bing.com/images/search?view=detailV2&ccid=tnmEs%2fpD&id=B60FC1FD5EC77E63445EDB94C4B723430076BB86&thid=OIP.tnmEs_pDcPIGG8jS6EBjFQAAAA&mediaurl=https%3a%2f%2fpahaldesign.com%2fwp-content%2fuploads%2f2017%2f12%2ffine-arts-at-lpu.jpg&exph=308&expw=400&q=design+block+lpu&simid=608045663337410399&FORM=IRPRST&ck=FC64CBBB1AA59448B9F881DF3552B10C&selectedIndex=19&itb=0",
+        "location": "On 2nd floor"
     },
     {
         "placeName":"Design",
         "name":"Arun",
         "date":"28-01-2024",
-        "img":"https://th.bing.com/th/id/OIP.nHb8ZpTHbolr2IxntgS2OQHaE8?rs=1&pid=ImgDetMain",
-        "benchLocation": "Semicircle in front of block"
+        "image":"https://th.bing.com/th/id/OIP.nHb8ZpTHbolr2IxntgS2OQHaE8?rs=1&pid=imageDetMain",
+        "location": "Semicircle in front of block"
     },
     {
         "placeName":"block 25 - 28",
         "name":"Rajat",
         "date":"15-01-2024",
-        "img":"https://th.bing.com/th/id/R.54411d81b7bb79d826e370d15c294ddd?rik=bfeKS2TxHbQGiw&riu=http%3a%2f%2fhappenings.lpu.in%2fwp-content%2fuploads%2f2019%2f08%2fLPU.jpg&ehk=iXs5eaUPRbcumJe8z6VTE%2brXTIdoEGCgYEcVH2Z4WTU%3d&risl=&pid=ImgRaw&r=0",
-        "benchLocation": "In front of every block"
+        "image":"https://th.bing.com/th/id/R.54411d81b7bb79d826e370d15c294ddd?rik=bfeKS2TxHbQGiw&riu=http%3a%2f%2fhappenings.lpu.in%2fwp-content%2fuploads%2f2019%2f08%2fLPU.jpg&ehk=iXs5eaUPRbcumJe8z6VTE%2brXTIdoEGCgYEcVH2Z4WTU%3d&risl=&pid=imageRaw&r=0",
+        "location": "In front of every block"
     },
     {
         "placeName":"Block 34",
         "name":"Mayank",
         "date":"25-01-2024",
-        "img":"https://secureservercdn.net/160.153.138.177/0mo.278.myftpupload.com/wp-content/uploads/2019/06/LPU-Campus-3.jpg",
-        "benchLocation": "On floor 5"
+        "image":"https://secureservercdn.net/160.153.138.177/0mo.278.myftpupload.com/wp-content/uploads/2019/06/LPU-Campus-3.jpg",
+        "location": "On floor 5"
     }
 ]

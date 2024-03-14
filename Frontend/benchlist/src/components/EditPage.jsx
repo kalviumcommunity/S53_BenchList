@@ -4,7 +4,7 @@ import '../App.css'
 import { useEffect, useState } from "react"
 // import data from "../../../../Backend/dataPakage.json"
 
-const benchList = () => {
+const edit = () => {
     const [data, setData] = useState([])
     useEffect(() => {
         const getData = async () => {
@@ -19,11 +19,12 @@ const benchList = () => {
         }
         getData()
     }, [])
-    // }
-    // export default benchList
 
-
-    // export default function Navbar() {
+    const handleDelete=(id)=>{
+        axios.delete(`http://localhost:7000/data/${id}`)
+        window.location.reload()
+    }
+    
     return (
         <>
             <div className="container">
@@ -33,9 +34,21 @@ const benchList = () => {
                             return (
 
                                 <div class="card">
+                                    <div className="name-edit-trash">
+                                        <div className="name">
+                                            {elem.name}
+                                        </div>
+                                        <div className="trash-edit">
+                                            <div  className="edit">
+                                                <Link to={`/9/${elem._id}`}><img src="https://www.goodfreephotos.com/albums/vector-images/big-pencil-vector-art.png" alt="" /></Link>
+                                            </div>
+                                            <div onClick={()=>{handleDelete(elem._id)}} className="trash">
+                                                <img src="https://th.bing.com/th/id/OIP.YSt4Bmh5ULTX7Uud8-KB6AAAAA?w=200&h=200&rs=1&pid=ImgDetMain" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div className="img">
-                                        {/* <img src="https://th.bing.com/th/id/R.c533d613bcd759a8f1586600f135e90a?rik=9sz9wnyLtobccw&riu=http%3a%2f%2fwww.lpu.in%2facademics%2fimgs%2flive-projects%2ffull%2funi-mall.jpg&ehk=GWAf3Wq205PwwQzmwZfKu3kPI7jciJjpscHFa3za4js%3d&risl=&pid=ImgRaw&r=0" alt="" /> */}
-                                        <img src={elem.img} alt="" />
+                                       <img src={elem.image} alt="" />
                                     </div>
                                     <div className="location">
                                         <div className="locationEmoji"><img src="https://e7.pngegg.com/pngimages/457/630/png-clipart-location-logo-location-computer-icons-symbol-location-miscellaneous-angle-thumbnail.png" alt="" /></div>
@@ -51,19 +64,8 @@ const benchList = () => {
                         })
                     }
                 </div>
-                <div className="editcard">
-                    <div className="text">
-                        <h3>You find any new place?</h3>
-                    </div>
-                    <div className="addButton">
-                        <button><Link to="/7">ADD</Link></button>
-                    </div>
-                    <div className="editButton">
-                        <button><Link to="/8">EDIT</Link></button>
-                    </div>
-                </div>
             </div>
         </>
     )
 }
-export default benchList
+export default edit

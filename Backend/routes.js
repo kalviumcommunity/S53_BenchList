@@ -42,7 +42,7 @@ router.post("/", async (req, res) => {
     }
 });
 
-router.patch("/:id", async (req, res) => {
+router.put("/:id", async (req, res) => {
     try{
     const _id=req.params.id;
     const getData = await User.findByIdAndUpdate(_id,req.body)
