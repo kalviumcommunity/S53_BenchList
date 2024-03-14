@@ -14,7 +14,6 @@ ConnectToDB().then((mongoConnection)=>{
 
 app.use("/data",route)
 
-
 app.listen(port,()=>{
   console.log(`Server is running on http://localhost:${port}`);
 })
