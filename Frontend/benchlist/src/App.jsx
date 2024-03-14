@@ -1,4 +1,4 @@
-import { Route, Routes, } from "react-router-dom"
+import { Route, Routes, useParams } from "react-router-dom"
 import "./App.css"
 import Navbar from "./components/Navbar"
 import Home from "./components/Home"
@@ -9,8 +9,11 @@ import Login from "./components/LoginPage"
 import SignUp from "./components/SignUp"
 import Data from "./components/DummyData"
 import AddForm from "./components/AddForm"
+import EditPage from "./components/EditPage"
+import EditForm from "./components/EditForm"
 
 function App() {
+  const { id } = useParams();
   return (
     <>
       <Navbar />
@@ -24,6 +27,8 @@ function App() {
           <Route path="/5" element={<SignUp />} />
           <Route path="/6" element={<Data />} />
           <Route path="/7" element={<AddForm />} />
+          <Route path="/8" element={<EditPage />} />
+          <Route path="/9/:id" element={<EditForm />} />
         </Routes>
       </div>
     </>
