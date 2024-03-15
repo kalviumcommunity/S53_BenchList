@@ -17,7 +17,7 @@ const LoginPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:7000/data/signup", credentials);
+      const response = await axios.post("https://s53-benchlist-server.onrender.com/data/signup", credentials);
       // console.log(response.data)
       document.cookie = `accessToken=${response.data.token}; path=/`;
       console.log("Login Successful");
