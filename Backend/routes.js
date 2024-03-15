@@ -2,6 +2,8 @@ const express = require("express");
 const router = express.Router();
 const mongoose = require("mongoose");
 const User = require("./productschema");
+const jwt=require("jsonwebtoken");
+const UserModel=require("./userschema")
 const app = express();
 app.use(express.json());
 
@@ -58,5 +60,24 @@ router.delete("/:id", async (req, res) => {
     res.status(400).send(err);
   }
 });
+
+router.post("/signup", async (req, res) => {
+  try {
+    const newUser = await UserModel.create(req.body);
+    if (newUser) {
+      const token = jwt.sign({ name: newUser.name }, 'secretkey');
+      res.status(201).json({ user: newUser, token });
+    } else {
+      res.status(400);
+      throw new Error("Failed To Create User");
+    }
+  } catch (err) {
+    console.error(err);
+    res.status(500).send("Internal Server Error");
+  }
+});
+
+
+
 
 module.exports = router;

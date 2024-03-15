@@ -1,42 +1,42 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 
 const LoginPage = () => {
-  const [name,setName]=useState("");
+  const [credentials, setCredentials] = useState({
+    name: "",
+    password: ""
+  });
+
   const handleChange = (e) => {
-    setName(e.target.value)
+    setCredentials({
+      ...credentials,
+      [e.target.name]: e.target.value
+    });
+  };
 
-  }
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post("http://localhost:7000/data/signup", credentials);
+      // console.log(response.data)
+      document.cookie = `accessToken=${response.data.token}; path=/`;
+      console.log("Login Successful");
+    } catch (error) {
+      console.error("Error logging in:", error);
+    }
+  };
 
-  const handleSubmit = () => {
-      document.cookie=`username=${name}`
-      window.location.reload();
-  }
-
-  const deleteCookie=()=>{
-      document.cookie=`username=${name}; expires=Thu, 01 Jan 1970 00:00:00 UTC`
-      window.location.reload();
-  }
   return (
     <>
       <div className="divbody">
         <div className="sign-up-page">
           <div className="sign-up-form">
-            <h2>Get Started</h2>
-            <p>Don't have an Account? sing up</p>
-            <input onChange={handleChange} type="text" placeholder="Name" />
-            <input type="email" placeholder="Email" />
-            <input type="password" placeholder="Password" />
-            <button onClick={handleSubmit} className="sign-up-btn">login</button>
-            <button onClick={deleteCookie} className="sign-up-btn">logout</button>
-            <p id='orwith'>or login with</p>
-            <div className="auth-providers">
-              <button className="google-btn">
-                <i className="fa fa-google"></i>
-              </button>
-              <button className="apple-btn">
-                <i className="fa fa-apple"></i>
-              </button>
-            </div>
+            <h2>Login</h2>
+            <form onSubmit={handleSubmit}>
+              <input onChange={handleChange} type="text" name="name" placeholder="Name" />
+              <input onChange={handleChange} type="password" name="password" placeholder="Password" />
+              <button type="submit" className="sign-up-btn">Login</button>
+            </form>
           </div>
         </div>
       </div>
