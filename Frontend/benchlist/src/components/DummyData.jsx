@@ -2,7 +2,6 @@ import { Link } from "react-router-dom"
 import axios from 'axios'
 import '../App.css'
 import { useEffect, useState } from "react"
-// import data from "../../../../Backend/dataPakage.json"
 
 const benchList = () => {
     const [data, setData] = useState([])
@@ -19,11 +18,7 @@ const benchList = () => {
         }
         getData()
     }, [])
-    // }
-    // export default benchList
 
-
-    // export default function Navbar() {
     return (
         <>
             <div className="container">
@@ -34,7 +29,6 @@ const benchList = () => {
 
                                 <div class="card">
                                     <div className="img">
-                                        {/* <img src="https://th.bing.com/th/id/R.c533d613bcd759a8f1586600f135e90a?rik=9sz9wnyLtobccw&riu=http%3a%2f%2fwww.lpu.in%2facademics%2fimgs%2flive-projects%2ffull%2funi-mall.jpg&ehk=GWAf3Wq205PwwQzmwZfKu3kPI7jciJjpscHFa3za4js%3d&risl=&pid=ImgRaw&r=0" alt="" /> */}
                                         <img src={elem.img} alt="" />
                                     </div>
                                     <div className="location">

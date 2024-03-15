@@ -34,8 +34,6 @@ function AddForm() {
     }
   }
 
-
-  // console.log(value);
   return (
     <>
     <div>
