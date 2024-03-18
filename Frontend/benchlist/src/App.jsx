@@ -1,4 +1,4 @@
-import { Route, Routes ,useParams} from "react-router-dom"
+import { Route, Routes, useParams } from "react-router-dom"
 import "./App.css"
 import Navbar from "./components/Navbar"
 import Home from "./components/Home"
@@ -13,7 +13,7 @@ import EditPage from "./components/EditPage"
 import EditForm from "./components/EditForm"
 
 function App() {
-  const {id}=useParams();
+  const { id } = useParams();
   return (
     <>
       <Navbar />
@@ -29,7 +29,6 @@ function App() {
           <Route path="/7" element={<AddForm />} />
           <Route path="/8" element={<EditPage />} />
           <Route path="/9/:id" element={<EditForm />} />
-          
         </Routes>
       </div>
     </>
