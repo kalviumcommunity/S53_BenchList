@@ -78,6 +78,28 @@ router.post("/signup", async (req, res) => {
 });
 
 
+router.post("/login", async (req, res) => {
+  try {
+    const {name} = req.body;
+    const newUser = await UserModel.findOne({name});
+    if (newUser) {
+      if(newUser.password === req.body.password){
+        const token = jwt.sign({ name: newUser.name }, 'secretkey');
+        res.status(201).json({ user: newUser, token });
+      }
+      else{
+        res.send("password is incorrect")
+      }
+    } else {
+      res.status(400).send("User not found");
+    }
+  } catch (err) {
+    console.error(err);
+    res.status(500).send("Internal Server Error");
+  }
+});
+
+
 
 
 module.exports = router;
